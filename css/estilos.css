@@ -1,0 +1,230 @@
+body{
+  background-color:  #02010a;
+  font-family: 'Dancing Script';
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+figcaption{
+  text-decoration: underline;
+}
+
+header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  animation-name: slidein;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes slidein{
+  0% {
+		margin-top: 150%;
+	}
+	60% {
+		margin-top: -5%;
+	}
+	100% {
+		margin-top: 0%;
+	}
+}
+
+footer{
+  border-radius: 0px 0px 10px 10px;
+  background-color: #C6d5c5;
+}
+
+img{
+  box-shadow: 2px 2px #02010a;
+}
+
+header h1{
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+}
+
+a{
+  color: white;
+}
+
+.active{
+  text-decoration: none;
+}
+
+
+ul{
+  list-style: none;
+  display: inline;
+}
+
+#redesSociales{
+  display: flex;
+  flex-direction: column;
+}
+
+#redesSociales > a{
+  color: black;
+}
+
+#contenedor3 {
+  padding-left: 2%;
+}
+
+#menu{
+  padding-right: 1%;
+  padding-top: 4%;
+}
+
+#menu nav li{
+  padding-right: 15px;
+}
+
+@media (min-width:900px) {
+
+  .encabezado{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .encabezado > div{
+    width: 50%;
+  }
+
+  #menu nav li{
+    float: right;
+    display: inline;
+  }
+
+  .contendor2{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contendorPaisaje{
+    display: flex;
+    flex-direction: row;
+  }
+
+  #contenedor3 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #contenedor3 > div {
+    width: 25%;
+  }
+
+}
+
+@media (max-width:900px) {
+
+  #menu nav li{
+    float: center;
+    display: inline;
+  }
+
+  .encabezado{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .encabezado > div{
+    text-align: center;
+    width: 100%;
+  }
+
+  h1{
+    text-align: center !important;
+  }
+
+  .contendor2{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contendorPaisaje{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contenedor3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+.contenedor, .contenedor3, .contendorPaisaje{
+  width: 100%;
+}
+
+.contendorPaisaje{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contenedor{
+  background-color: #82c3a6;
+}
+
+.contenido{
+  background-color: #d5c75f;
+}
+.contendor2{
+  padding: 2%;
+  background-color: #d5c75f;
+}
+
+.contendor2 div > a > img{
+  width: 90%;
+}
+
+.contendorPaisaje div > img{
+  width: 90%;
+}
+
+.contenedor, .contendor2, .contendorPaisaje > div{
+  text-align: center;
+}
+
+#imagenCentral img{
+  padding-top: 2%;
+  width: 80%;
+}
+
+#imgDer, #imgIzq{
+  transition-duration: 1s;
+  box-shadow: 2px 2px #82c3a6;
+}
+
+#imgIzq:hover{
+  transform: rotate(10deg);
+}
+
+#imgDer:hover{
+  transform: translate(20px, -5px);
+}
+
+#facebook, #instagram, #twitter{
+  box-shadow: none;
+  width: 25px;
+}
+
+#redesSociales a{
+  text-decoration: none;
+}
+
+#imagen1{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+#imagen2, #imagen4, #imagen6{
+  -webkit-filter:grayscale(100%);
+	filter:grayscale(100%);
+}
+
+#imagen3{
+  -webkit-filter:sepia(90%);
+	filter: sepia(90%);
+}
